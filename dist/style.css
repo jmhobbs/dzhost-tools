@@ -5,17 +5,6 @@ body {
   padding: 0 1rem;
   color: #1a1a1a;
 }
-button {
-  margin: 0.25rem 0.5rem 0.25rem 0;
-  padding: 0.5rem 1rem;
-}
-#status {
-  margin-top: 1rem;
-  white-space: pre-wrap;
-}
-#status.error {
-  color: #b00020;
-}
 
 ul {
   margin: 0;
