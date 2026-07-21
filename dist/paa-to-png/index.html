@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DayZ Tools : PAA to PNG</title>
+    <link rel="stylesheet" href="/style.css?v=1" />
+  </head>
+  <body>
+    <h1><a href="/">DayZ Tools</a> : PAA To PNG Converter</h1>
+    <p>Convert DayZ PAA files to PNG format easily.</p>
+    <p>Everything runs locally in your browser - your file is  never uploaded.</p>
+    <p><em>Currently only supports DXT1 format PAA files.</em></p>
+    <input type="file" id="fileInput" accept=".paa" disabled>
+    <p id="status"></p>
+    <img id="outputImage" alt="Converted PNG will appear here" style="display:none; margin-top: 20px; max-width: 100%;">
+    <p>Also available as a command line tool, <a href="https://github.com/jmhobbs/go-paa">github.com/jmhobbs/go-paa</a></p>
+    <script src="wasm_exec.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
