@@ -3,13 +3,13 @@
 // target is single-threaded, so isolating it in a Worker is what actually
 // buys responsiveness here - the Go side (cmd/wasm) just exposes plain
 // synchronous functions.
-importScripts('public/wasm_exec.js');
+importScripts('wasm_exec.js');
 
 let ready = false;
 const queued = [];
 
 const go = new Go();
-WebAssembly.instantiateStreaming(fetch('public/odol.wasm'), go.importObject)
+WebAssembly.instantiateStreaming(fetch('odol.wasm'), go.importObject)
   .then((result) => {
     // go.run() executes main() synchronously up to the point where it
     // parks (our main() registers the odolConvertTo* globals, then blocks

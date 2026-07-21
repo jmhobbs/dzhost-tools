@@ -217,4 +217,4 @@ async function handleClick(action, ascii) {
 buttons.mlod.addEventListener('click', () => handleClick('mlod'));
 buttons.fbxBinary.addEventListener('click', () => handleClick('fbx', false));
 
-readyPromise.catch((err) => setStatus('Failed to load converter: ' + err.message, true));
+readyPromise.then(() => { fileInput.disabled = false; setStatus('Ready!'); }).catch((err) => setStatus('Failed to load converter: ' + err.message, true));

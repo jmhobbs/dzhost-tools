@@ -39,3 +39,13 @@ ul li p {
   margin: 0.5rem 0 0 0;
   font-size: 1rem;
 }
+
+p#status {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+p#status.error {
+  border-color: #b00020;
+}

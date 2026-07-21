@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DayZ Tools : P3D Converter</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style.css?v=1" />
     <style>
       button {
         margin: 0.25rem 0.5rem 0.25rem 0;
@@ -45,12 +45,12 @@
     <p>
       Everything runs locally in your browser - your file is  never uploaded.
     </p>
-    <p><input type="file" id="file-input" accept=".p3d"></p>
+    <p><input type="file" id="file-input" accept=".p3d" disabled></p>
     <p>
       <button id="btn-mlod" disabled>Export MLOD + model.cfg</button>
       <button id="btn-fbx-binary" disabled>Export FBX (binary)</button>
     </p>
-    <div id="status"></div>
+    <p id="status">Loading...</p>
     <div id="viewer-wrap">
       <canvas id="viewer"></canvas>
       <p id="viewer-controls">
