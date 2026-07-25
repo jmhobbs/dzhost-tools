@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DayZ Tools : PBR2DAYZ - Convert PBR teztures to DayZ</title>
+    <link rel="stylesheet" href="/style.css?v=1" />
+    <style>
+      label {
+        display: block;
+        margin: 1rem 0 0.5rem;
+      }
+      button {
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="/">DayZ Tools</a> : PBR to DayZ Texture Converter</h1>
+    <p>Convert PBR textures to DayZ format.</p>
+    <label for="baseColor">
+      Base Color
+    </label>
+    <input type="file" id="baseColor" accept="image/png, image/jpeg">
+    <label for="normal">
+      Normal
+    </label>
+    <input type="file" id="normal" accept="image/png, image/jpeg">
+    <label for="metallic">
+      Metallic
+      <small>(optional)</small>
+    </label>
+    <input type="file" id="metallic" accept="image/png, image/jpeg">
+    <label for="roughness">
+      Roughness
+      <small>(optional)</small>
+    </label>
+    <input type="file" id="roughness" accept="image/png, image/jpeg">
+    <label for="ao">
+      Ambient Occlusion
+      <small>(optional)</small>
+    </label>
+    <input type="file" id="ao" accept="image/png, image/jpeg">
+    <div>
+      <button id="convertButton" disabled>Convert to DayZ Format</button>
+      <button id="downloadButton" disabled>Download Converted Textures</button>
+    </div>
+    <p id="status">Loading...</p>
+    <p class="note">⚠ Conversion in the browser can be slow for very large textures. ⚠</p>
+    <img id="co" alt="Converted _co PNG will appear here" style="display:none; margin-top: 20px; max-width: 100%;">
+    <img id="nohq" alt="Converted _nohq PNG will appear here" style="display:none; margin-top: 20px; max-width: 100%;">
+    <img id="as" alt="Converted _as PNG will appear here" style="display:none; margin-top: 20px; max-width: 100%;">
+    <img id="smdi" alt="Converted _smdi PNG will appear here" style="display:none; margin-top: 20px; max-width: 100%;">
+    <p>Also available as a command line tool, <a href="https://github.com/jmhobbs/pbr2dayz">github.com/jmhobbs/pbr2dayz</a></p>
+    <script src="main.js"></script>
+  </body>
+</html>
