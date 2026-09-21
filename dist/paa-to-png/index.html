@@ -10,11 +10,19 @@
     <h1><a href="/">DayZ Tools</a> : PAA To PNG Converter</h1>
     <p>Convert DayZ PAA files to PNG format easily.</p>
     <p>Everything runs locally in your browser - your file is  never uploaded.</p>
-    <p><em>Currently only supports DXT1 format PAA files.</em></p>
     <input type="file" id="fileInput" accept=".paa" disabled>
     <p id="status"></p>
     <img id="outputImage" alt="Converted PNG will appear here" style="display:none; margin-top: 20px; max-width: 100%;">
     <p>Also available as a command line tool, <a href="https://github.com/jmhobbs/go-paa">github.com/jmhobbs/go-paa</a></p>
+    <hr/>
+    <h4>Changelog</h4>
+    <pre>
+2026-09-18 - v0.0.7 : Add support for swizzled textures.
+2026-08-26 - v0.0.6 : Bug fixes in LZO buffer sizes.
+2026-07-24 - v0.0.4 : Partial RGBA4 and RGBA5 support.
+2026-07-23 - v0.0.2 : Inproved alpha handling with DXT fork.
+2026-07-23 - v0.0.1 : Initial release.
+    </pre>
     <script src="wasm_exec.js"></script>
     <script src="main.js"></script>
     <script data-goatcounter="https://tools-dzhosts.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
