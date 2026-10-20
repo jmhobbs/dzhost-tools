@@ -1,4 +1,4 @@
-importScripts('wasm_exec.js');
+importScripts('/wasm_exec.js');
 
 const go = new Go();
 
